@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Étudiant Systèmes Embarqués</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <h2 class="logo">MonPortfolio</h2>
+        <ul class="nav-links">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#interets">Intérêts</a></li>
+        </ul>
+        <button id="darkModeBtn">🌙</button>
+    </nav>
+
+    <header id="hero" class="hero">
+        <h1>Bienvenue, je suis <span class="highlight">Gharbi Ahmed</span></h1>
+        <p>Étudiant en systèmes embarqués et mobile</p>
+        <a href="#presentation" class="btn">Découvrir mon profil</a>
+    </header>
+
+    <!-- PRESENTATION -->
+    <section id="presentation" class="section">
+        <h2>À propos de moi</h2>
+        <p>
+            Passionné par les microcontrôleurs, l’IoT et la programmation bas niveau,
+            j'ai réalisé des projets autour de l’ESP32, Arduino, systèmes embarqués et applications mobiles.
+        </p>
+    </section>
+
+    <!-- PARCOURS -->
+    <section id="parcours" class="section alt">
+        <h2>Mon parcours</h2>
+        <div class="timeline">
+            <div class="item fade">
+                <h3>Licence – Systèmes Embarqués & Mobiles</h3>
+                <p>Programmation C, Java, IoT, PCB, systèmes temps réel, capteurs.</p>
+            </div>
+
+            <div class="item fade">
+                <h3>Expérience & Projets</h3>
+                <p>
+                    ✔️ Station météo IoT<br>
+                    ✔️ Application mobile de suivi<br>
+                    ✔️ Projet domotique ESP32<br>
+                    ✔️ Mini-cartes électroniques programmables
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section">
+        <h2>Mes projets</h2>
+
+        <div id="projectsContainer" class="cards"></div>
+    </section>
+
+    <!-- INTERETS -->
+    <section id="interets" class="section alt">
+        <h2>Centres d'intérêt</h2>
+        <div class="cards">
+            <div class="card fade">Électronique</div>
+            <div class="card fade">Développement mobile</div>
+            <div class="card fade">IA & Machine Learning</div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 - Mon Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

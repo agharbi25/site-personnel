@@ -1,0 +1,160 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f2f2f2;
+    color: #222;
+    transition: 0.3s;
+}
+
+.dark {
+    background: #111;
+    color: #ddd;
+}
+
+.highlight {
+    color: #8e2de2;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.dark .navbar {
+    background: #222;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: white;
+    color: #4a00e0;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section.alt {
+    background: #fff;
+}
+
+.dark .section.alt {
+    background: #222;
+}
+
+/* TIMELINE */
+.timeline .item {
+    background: white;
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+    border-left: 5px solid #8e2de2;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.dark .timeline .item {
+    background: #333;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    min-width: 180px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    background: #8e2de2;
+    color: white;
+}
+
+.dark .card {
+    background: #333;
+}
+
+/* ANIMATIONS */
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 700px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
